@@ -15,7 +15,7 @@ public enum BuildingType
 [System.Serializable]
 public class ResourceRequirement
 {
-    public ResoureData ResoureData;
+    public ResourceData ResoureData;
     public int requiredAmount;
 }
 
@@ -30,6 +30,7 @@ public class BuildingData : ScriptableObject
     [SerializeField] private Sprite icon;
     [SerializeField] private int health;
     [SerializeField] private ResourceRequirement[] requiredResources;
+    [SerializeField] private ResourceType producedResource;
     [SerializeField] private int productionAmount = 1;
     [SerializeField] private float productionTime = 1f;
 
@@ -42,6 +43,7 @@ public class BuildingData : ScriptableObject
     public Sprite Icon => icon;
     public int Health => health;
     public ResourceRequirement[] RequiredResources => requiredResources;
+    public ResourceType ProducedResource => producedResource;
     public int ProductionAmount => productionAmount;
     public float ProductionTime => productionTime;
 

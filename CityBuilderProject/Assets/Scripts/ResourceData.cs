@@ -12,11 +12,12 @@ public enum ResourceType
 }
 
 [CreateAssetMenu(fileName = "NewResoureceData", menuName = "Data/ResourceData")]
-public class ResoureData : ScriptableObject
+public class ResourceData : ScriptableObject
 {
     [SerializeField] private ResourceType type = ResourceType.Undefined;
     [SerializeField] private Sprite icon;
 
-
+    public ResourceType Type => type;
+    public Sprite Icon => icon;
 
 }

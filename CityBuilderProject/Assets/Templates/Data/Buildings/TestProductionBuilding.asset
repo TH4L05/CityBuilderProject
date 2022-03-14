@@ -18,8 +18,6 @@ MonoBehaviour:
   health: 100
   requiredResources:
   - ResoureData: {fileID: 11400000, guid: 0f8dad305a19fad4da51ef3d116ac1b1, type: 2}
-    requiredAmount: 0
-  - ResoureData: {fileID: 0}
-    requiredAmount: 0
+    requiredAmount: 5
   productionAmount: 1
   productionTime: 1
